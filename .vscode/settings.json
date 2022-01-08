@@ -1,0 +1,6 @@
+// this setting could be ignored unless you are not using vscode. 
+{
+    "java.project.sourcePaths": [
+        "."
+    ]
+}
