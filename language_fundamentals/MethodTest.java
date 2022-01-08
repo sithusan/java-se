@@ -1,13 +1,17 @@
-import java.lang.reflect.Method;
-
 public class MethodTest {
     public static void main(String[] args) {
-        MethodTest.showAddResult(1, 2);
-        MethodTest.sayHello();
-        MethodTest.add(1, 2);
+        MethodTest obj = new MethodTest();
+        obj.showAddResult(1, 2);
+
+        sayHello();
+
+        int result = add(1, 2);
+        System.out.println(result);
+
+        OtherMethod.showMessage("From Other Method");
     }
 
-    public static void showAddResult(int a, int b) {
+    public void showAddResult(int a, int b) {
         System.out.println(a + b);
     }
 
