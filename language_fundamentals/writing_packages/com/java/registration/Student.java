@@ -6,7 +6,10 @@ public class Student {
     String name;
     Course course;
 
+    private static int count;
+
     public Student(String name) {
+        count++;
         this.name = name;
     }
 
@@ -17,5 +20,9 @@ public class Student {
     public void sayYourCourse() {
         System.out.println("My name is " + this.name + ".");
         System.out.println("I am taking " + this.course.name + ".");
+    }
+
+    public static void showStudentCount() {
+        System.out.println("All Student : " + count);
     }
 }
