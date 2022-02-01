@@ -12,5 +12,15 @@ public class ContainerTest {
         for (String str : container.getArray()) {
             System.out.println(str);
         }
+
+        // Enum as Singleton
+        adder.addEnum("Hello Enum");
+        adder.addEnum("Singleton as Enum");
+
+        EnumAsSingleton enumAsSingleton = EnumAsSingleton.Container;
+
+        for (String str : enumAsSingleton.getArray()) {
+            System.out.println("Singleton as Enum"+str);
+        }
     }
 }
