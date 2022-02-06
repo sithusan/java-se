@@ -4,7 +4,7 @@ public class Printer {
 
     private MyScanner scanner;
 
-    public Printer(MyScanner scanner){
+    public Printer(MyScanner scanner) {
         this.scanner = scanner;
     }
 
